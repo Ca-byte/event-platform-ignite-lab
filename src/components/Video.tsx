@@ -2,48 +2,21 @@ import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
 import { RocketSeatLogo } from './RocketseatLogo'
 import '@vime/core/themes/default.css';
-import { gql, useQuery } from "@apollo/client";
 
-const GET_LESSON_BY_SLUG_QUERY = gql`
-query GetLessonBySlug ($slug: String){
-  lesson(where: {slug: $slug}) {
-    title
-    videoId
-    description
-    teacher {
-      bio
-      avatarURL
-      name
-    }
-  }
-}
+import { useGetLessonBySlugQuery } from "../graphql/generated";
 
-`
 
-interface GetLessonBySlugResponse {
-    lesson: {
-        title:string;
-        videoId: string;
-        description:string;
-        teacher:{
-            bio: string;
-            avatarURL: string;
-            name: string;
-        }
-
-    }
-}
 interface VideoProps {
     lessonSlug: string;
 }
 export function Video(props: VideoProps){
-    const { data } = useQuery<GetLessonBySlugResponse>(GET_LESSON_BY_SLUG_QUERY, {
+    const { data } = useGetLessonBySlugQuery({
         variables : {
             slug: props.lessonSlug,
             
         }
     })
-    if(!data) {
+    if(!data || !data.lesson) {
         return (
             <div className="flex-1">
                 <p className="mx-auto text-4xl text-purple-500">Loading...</p> 
@@ -70,6 +43,10 @@ export function Video(props: VideoProps){
                         <p className="mt-4 text-gray-200 leading-relaxed">
                             {data.lesson.description}
                         </p>
+                        {
+                            data.lesson.teacher && (
+
+                            
                         <div className="flex items-center gap-4 mt-6 ">
                             <img 
                             src={data.lesson.teacher.avatarURL}
@@ -81,6 +58,7 @@ export function Video(props: VideoProps){
                                 <span className="text-gray-200 text-sm block">{data.lesson.teacher.bio}</span>
                             </div>
                         </div>
+                        )}
                     </div>
                     <div className="flex flex-col gap-4">
                         <a href="" className="p-4 text-sm bg-gr bg-sky-500 hover:bg-sky-600 transition-colors flex items-center rounded font-bold gap-2 uppercase justify-center">
