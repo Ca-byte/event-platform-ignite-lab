@@ -44,7 +44,7 @@ export function Subscribe(){
 
                 <img 
                     className="absolute max-h-[575px] left-16 " 
-                    src="/public/assets/react-logo.svg" 
+                    src="/assets/react-logo.svg" 
                     alt="React logo" 
                 />
 
