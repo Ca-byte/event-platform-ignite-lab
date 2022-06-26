@@ -28,9 +28,11 @@ export function Subscribe(){
 
     return(
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center ">
-            <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto relative">
+            <div className="w-full max-w-[1100px] lg:flex text-center items-center lg:justify-between pt-20 mx-auto relative">
                 <div className="max-w-[640px]">
-                    <Logo />
+                    <div className="flex justify-center bg-gray-700 py-10">
+                        <Logo />
+                    </div>
                     <h1 className="text-[40px] mt-8 leading-tight">
                         Construa uma <strong className="text-purple-500">aplicação completa</strong>, do zero, com <strong className="text-purple-500">React JS</strong>
                     </h1>
@@ -44,7 +46,7 @@ export function Subscribe(){
                 </div>
 
                 <img 
-                    className="absolute max-h-[575px] left-16 " 
+                    className="absolute max-h-[575px] lg:left-16 top-1 " 
                     src="/images/react-logo.svg" 
                     alt="React logo" 
                 />
