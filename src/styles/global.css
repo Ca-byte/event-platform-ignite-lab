@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     @apply bg-gray-900 text-gray-100;
+    -webkit-font-smoothing: antialiased;
+    scrollbar-width: thin;
+    scrollbar-color: #827EFC transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+ 
+body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 12px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  padding: 2px;
+  background-color: #827EFC;
+  outline: 2px solid #38BDF8;
+  border-radius: 12px;
 }

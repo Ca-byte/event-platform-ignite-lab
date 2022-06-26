@@ -1,9 +1,10 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
-import { RocketSeatLogo } from './RocketseatLogo'
+
 import '@vime/core/themes/default.css';
 
 import { useGetLessonBySlugQuery } from "../graphql/generated";
+
 
 
 interface VideoProps {
@@ -105,15 +106,6 @@ export function Video(props: VideoProps){
                         </div>
                     </a>
                 </div>
-            <footer className="w-full border-t-2 border-gray-500 flex justify-between pt-8  ">
-                <div className="flex items-center">
-                    <RocketSeatLogo />
-                    <span className="text-base text-gray-200 pl-4">
-                        Rocketseat - Todos os direitos reservados
-                    </span>
-                </div>
-                <span className="text-gray-200 text-base px-8">Políticas de privacidade</span>
-            </footer>
             </div>
         </div>
     )
