@@ -13,8 +13,8 @@ export function Event(){
             <Header />
             <main className="flex flex-1">
                 { slug ? <Video  lessonSlug={slug} /> 
-                :   <div className="flex-1  bg-gray-500  flex justify-center">
-                        <div className=" flex-col justify-center w-[600px] max-h-[800px] bg-gray-600 mt-14 border-4 border-gray-400">
+                :   <div className="flex-1  bg-gray-900  flex justify-center">
+                        <div className=" flex-col justify-center w-[600px] max-h-[800px] bg-gray-600 mt-14 border-4 border-sky-500">
                             <div className="flex max-w-[500px] mx-auto">
                                 <h1 className="text-[40px] text-center font-bold py-4">
                                         Seja Bem vindo, ao evento mais esperado do mês de Junho!

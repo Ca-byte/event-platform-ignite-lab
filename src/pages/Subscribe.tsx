@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 
 const CREATE_SUBSCRIBER_MUTATION = gql `
-    mutation CreateSubscriber($name: String!, $email: String!) {
-    createSubscriber(data: {name: $name, email: $email}){
-        id
-    }
+    mutation CreateSubscriber ($name: String!, $email: String!) {
+        createSubscriber(data: {name: $name, email: $email}) {
+            id
+        }
     }
 `
 
@@ -18,11 +18,11 @@ export function Subscribe(){
     const [name, setName]= useState('')
     const [email, setEmail]= useState('')
 
-    const  [ createSubscriber] = useMutation(CREATE_SUBSCRIBER_MUTATION)
+    const  [createSubscriber, {loading}] = useMutation(CREATE_SUBSCRIBER_MUTATION)
 
-    async function handleSubscribe(event: FormEvent){
+   function handleSubscribe(event: FormEvent){
         event.preventDefault();
-        await createSubscriber({
+        createSubscriber({
             variables: {
                 name,
                 email,
@@ -74,7 +74,8 @@ export function Subscribe(){
                             onChange={event => setEmail(event.target.value)}
                             />
                         <button type="submit" 
-                            className="uppercase mt-4 bg-sky-500 py-4 rounded font-bold text-sm hover:bg-sky-600 transition-colors">
+                        disabled={loading}
+                            className="uppercase mt-4 bg-sky-500 py-4 rounded font-bold text-sm hover:bg-sky-600 disabled:opacity-50 transition-colors">
                             garantir minha vaga
                         </button>
                     </form>
