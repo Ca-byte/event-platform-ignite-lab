@@ -44,7 +44,7 @@ export function Subscribe(){
 
                 <img 
                     className="absolute max-h-[575px] left-16 " 
-                    src="/assets/react-logo.svg" 
+                    src="/assets/images/react-logo.svg" 
                     alt="React logo" 
                 />
 
@@ -73,7 +73,7 @@ export function Subscribe(){
                     </form>
                 </div>
             </div>
-            <img src="/assets/code-editor.png" alt="code editor mockup" className="mt-10" />
+            <img src="/assets/images/code-editor.png" alt="code editor mockup" className="mt-10" />
         </div>
     )
 }
