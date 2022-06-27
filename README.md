@@ -71,6 +71,7 @@ $ npm run dev
 ## 💻 Projeto
 
 Nesse semana do ignite lab nós aprendemos tecnologias avançadas e altamente performaticas.
+Uma plataforma de conteúdos em vídeo, para ser mais exata a mesma plataforma que utilizamos para aprender esse conteúdo, incrível não é mesmo? :star_struck:
 (https://event-platform-ignite-lab-kappa.vercel.app/) 
 
 Este é um projeto desenvolvido durante a **[Ignite Lab](https://lp.rocketseat.com.br/inscricao/ignite-lab/)**, realizada pela **[@Rocketseat](https://github.com/Rocketseat)** durante os dias 20 a 26 de junho 2022.
