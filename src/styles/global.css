@@ -29,3 +29,9 @@ body::-webkit-scrollbar-thumb {
   outline: 2px solid #38BDF8;
   border-radius: 12px;
 }
+
+.sidebar-show {
+  display: flex !important;
+  position: absolute;
+  bottom: 0;
+}

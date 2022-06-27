@@ -1,4 +1,5 @@
-import {Campfire, Confetti } from "phosphor-react";
+import {Campfire, Confetti, List, X } from "phosphor-react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
@@ -7,7 +8,23 @@ import { Video } from "../components/Video";
 
 
 export function Event(){
-    const { slug } = useParams<{ slug: string }>()
+    const { slug } = useParams<{ slug: string }>();
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    useEffect(() => {
+        if (menuOpen) {
+          document.getElementById('sidebar-div')?.classList.add('sidebar-show');
+          document.body?.classList.add('scroll');
+          window.scrollTo(0, 0);
+        } else {
+          document.getElementById('sidebar-div')?.classList.remove('sidebar-show');
+          document.body?.classList.remove('scroll');
+        }
+    }, [menuOpen]);
+
+    useEffect(() => {
+    setMenuOpen(false);
+    }, [slug]);
 
     return(
         <div className="flex flex-col min-h-screen">
@@ -45,7 +62,28 @@ export function Event(){
                         </div>
                     </div>
                 }
-                <SideBar />
+                <div
+                    id="sidebar-div"
+                    className={`hidden h-screen lg:flex top-[7rem] right-0 overflow-hidden
+                    lg:mr-1 pb-6 z-0 bg-brand-gray-700 border-b border-brand-gray-300
+                    `}
+                >
+                    <SideBar />
+                </div>
+                <div
+                    className={`fixed flex items-center top-[1rem] right-4 z-40
+                    lg:hidden gap-1`}
+                >
+                    {!menuOpen && <span className="text-sm">Aulas</span>}
+                    <button
+                    type="button"
+                    className={`w-10 h-10 flex justify-center items-center
+                    ${!menuOpen ? 'text-sky-500' : 'text-sky-500'}`}
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    >
+                    {!menuOpen ? <List size={40} /> : <X size={40} />}
+                    </button>
+                </div>
             </main>
             <Footer />
         </div>
