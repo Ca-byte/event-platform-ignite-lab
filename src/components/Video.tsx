@@ -36,7 +36,7 @@ export function Video(props: VideoProps){
             </div>
 
             <div className="p-8 max-w-[1100px] mx-auto">
-                <div className="flex items-start gap-16">
+                <div className="lg:flex items-start gap-16">
                     <div className="flex-1">
                         <h1 className="text-2xl font-bold">
                         {data.lesson.title}
@@ -48,7 +48,7 @@ export function Video(props: VideoProps){
                             data.lesson.teacher && (
 
                             
-                        <div className="flex items-center gap-4 mt-6 ">
+                        <div className="flex items-center gap-4 mt-6 mb-6 ">
                             <img 
                             src={data.lesson.teacher.avatarURL}
                             alt="Diego Fernandes" 
