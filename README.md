@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [React](https://pt-br.reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Tailwindss](https://tailwindcss.com/)
+- [Tailwind](https://tailwindcss.com/)
 - [GraphQL](https://graphql.org/)
 - [GraphCMS](https://graphcms.com/)
 - [GraphQL Generate Code](https://www.graphql-code-generator.com/)
