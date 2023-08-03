@@ -1,31 +1,47 @@
-#
-<p align="center">
-    <img alt="" src="./public/images/subscribe.png" width="700px">
-    <img alt="" src="./public/images/event.png" width="700px">
-</p>
-
-
-<p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
-<br>
-
 <p align="center">
     <img alt="" src="./public/images/ignite-logo.png" width="150px">
 </p>
 
 <br>
+
+<p align="center">
+    <img alt="" src="./public/images/subscribe.png" width="700px">
+    <img alt="" src="./public/images/event.png" width="700px">
+</p>
+
+<br>
+
 <p align="center">
     <img alt="" src="./public/images/video.png" width="700px">
 </p>
+
+<br>
+
+<p align="center">
+  <a href="#memo-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#clipboard-requirements">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#keyboard-how-to-run-the-project">How to run the project </a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#art-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
 <br>
 
 ---
-## 🚀 Tecnologias
 
-Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
+## :memo: Project 
+
+During this week of Ignite Lab, we learned advanced and highly performative technologies. It's a video content platform, to be more precise, the same platform we used to learn this content - amazing, isn't it? :star_struck:
+(https://event-platform-ignite-lab-kappa.vercel.app/)
+
+This is a project developed during the Ignite Lab, organized by @Rocketseat from June 20th to June 26th, 2022.
+
+<br>
+
+---
+## :rocket: Technologies ##
+
+This project was developed using the following technologies:
 
 - [React](https://pt-br.reactjs.org/)
 - [Vite](https://vitejs.dev/)
@@ -40,14 +56,14 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ---
 
-## 📋  Requisitos ##
+## :clipboard: Requirements
 
-Antes de iniciar você precisa :checkered_flag:, ter instalado o [Git](https://git-scm.com) e [Node](https://nodejs.org/en/).
+Before starting you need :checkered_flag:, have installed the [Git](https://git-scm.com) e [Node](https://nodejs.org/en/).
 
 <br>
 
 ---
-## ⌨ Como executar o projeto ##
+## :keyboard: How to run the project ##
 
 ```bash
 # Clone this project
@@ -66,33 +82,22 @@ $ npm run dev
 ```
 <br>
 
----
-
-## 💻 Projeto
-
-Nesse semana do ignite lab nós aprendemos tecnologias avançadas e altamente performaticas.
-Uma plataforma de conteúdos em vídeo, para ser mais exata a mesma plataforma que utilizamos para aprender esse conteúdo, incrível não é mesmo? :star_struck:
-(https://event-platform-ignite-lab-kappa.vercel.app/) 
-
-Este é um projeto desenvolvido durante a **[Ignite Lab](https://lp.rocketseat.com.br/inscricao/ignite-lab/)**, realizada pela **[@Rocketseat](https://github.com/Rocketseat)** durante os dias 20 a 26 de junho 2022.
-
-<br>
 
 ---
 
-## 🔖 Layout
+## :art: Layout ##
 
-Você pode visualizar o layout do projeto através dos links abaixo:
-Eu fiz a minha versão de cores e de responsividade. Fique a vontade para duplicar e abusar da criatividade.
+I created my version of colors and responsiveness. Feel free to duplicate and unleash your creativity.
 
 - [Ignite Lab](https://www.figma.com/file/YvOPZLgvtf2yGR1eYu57T6/Plataforma-de-evento---Ignite-Lab-by-Carol?node-id=35%3A183)
 
-Lembrando que você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo.
-
-
+Remembering that you need to have a [Figma](http://figma.com/) account to access it.
 
 ---
 
 
 <br>
-<p align="center">Desenvolvido com 💜 por Caroline Vieira</p>
+
+<a href="#top">☝</a>
+
+<p align="center">Developed with 💜 by Caroline Vieira</p>
